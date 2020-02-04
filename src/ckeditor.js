@@ -31,6 +31,10 @@ import Font from '@ckeditor/ckeditor5-font/src/font';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import Font from '@ckeditor/ckeditor5-font/src/font';
+
 export default class InlineEditor extends InlineEditorBase {}
 
 // Plugins to include in the build.
@@ -84,14 +88,6 @@ InlineEditor.defaultConfig = {
 			'insertTable',
 			'imageUpload',
 			'mediaEmbed',
-		]
-	},
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
 		]
 	},
 	table: {
